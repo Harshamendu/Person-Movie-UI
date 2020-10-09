@@ -33,7 +33,7 @@ export class PersonMovieComponent implements OnInit {
     .subscribe(res => this.dataSource.data = res);
   }
 
-  displayedColumns: string[] = ['personId', 'firstName', 'lastName', 'subscriptionType'];
+  displayedColumns: string[] = ['Person Id', 'First Name', 'Last Name', 'Subscription Type'];
   expandedElement: PersonMovie | null;
   public dataSource = new MatTableDataSource<PersonMovie>();
 
